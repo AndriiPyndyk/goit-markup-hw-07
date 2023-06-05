@@ -447,7 +447,7 @@ img {
 
     background-image: 
         linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-        url("/images/hero-section/mobile/hero-mobile.jpg");
+        url("../images/hero-section/mobile/hero-mobile.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -520,7 +520,7 @@ img {
 
     background-image: 
     linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-    url("/images/hero-section/tablet/hero-tablet.jpg");
+    url("../images/hero-section/tablet/hero-tablet.jpg");
 }
 
 .hero-title {
@@ -542,7 +542,7 @@ img {
 
     background-image: 
         linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-        url("/images/hero-section/desktop/hero-desktop.jpg");
+        url("../images/hero-section/desktop/hero-desktop.jpg");
 }
 
 .hero-title {
