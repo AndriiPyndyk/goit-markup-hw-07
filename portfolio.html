@@ -22,7 +22,7 @@
   </head>
   <body>
     <header class="header-border">
-      <div class="container header-container">
+      <div class="header-container container">
         <nav class="site-nav">
           <a href="./index.html" class="logo link"
             >Web<span class="logo-span header">Studio</span>
@@ -30,7 +30,7 @@
 
           <ul class="nav-menu list">
             <li class="nav-menu-item">
-              <a href="./index.html" class="nav-link link">Studio</a>
+              <a href="./index.html" class="nav-link  link">Studio</a>
             </li>
             <li class="nav-menu-item">
               <a href="./portfolio.html" class="nav-link current-menu-link link">Portfolio</a>
@@ -56,6 +56,75 @@
             </li>
           </ul>
         </address>
+
+        <button class="mobile-menu-button js-open-menu" type="button">
+          <svg class="mobile-menu-icon" width="32" height="32">
+            <use href="./images/icons.svg#icon-menu-hamburger"></use>
+          </svg>
+        </button>
+      </div>
+
+      <div class="mobile-menu js-menu-container">
+        <div class="mobile-menu-container container"> 
+          <nav class="mobile-menu-nav">
+            <ul class="mobile-menu-nav-list list">
+              <li class="mobile-menu-nav-item"><a class="mobile-menu-nav-link link" href="./index.html">Studio</a></li>
+              <li class="mobile-menu-nav-item"><a class="mobile-menu-nav-link current link" href="./portfolio.html">Portfolio</a></li>
+              <li class="mobile-menu-nav-item"><a class="mobile-menu-nav-link link" href="#">Contacts</a></li>
+            </ul>
+          </nav>
+
+          <address class="mobile-menu-contacts">
+            <ul class="mobile-menu-contacts-list list">
+              <li class="mobile-menu-contacts-item"><a class="mobile-menu-contacts-link-tel current link" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
+              <li class="mobile-menu-contacts-item"><a class="mobile-menu-contacts-link-mail link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+            </ul>
+          </address>
+
+          <div class="mobile-menu-socials">
+
+            <ul class="mobile-menu-socials-list list">
+              <li class="mobile-menu-socials-item">
+                <a class="mobile-menu-socials-link link" href="#">
+                  <svg class="mobile-menu-socials-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+
+              <li class="mobile-menu-socials-item">
+                <a class="mobile-menu-socials-link link" href="#">
+                  <svg class="mobile-menu-socials-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+
+              <li class="mobile-menu-socials-item">
+                <a class="mobile-menu-socials-link link" href="#">
+                  <svg class="mobile-menu-socials-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+
+              <li class="mobile-menu-socials-item">
+                <a class="mobile-menu-socials-link link" href="#">
+                  <svg class="mobile-menu-socials-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+
+            </ul>
+          </div>
+
+          <button class="mobile-menu-close-btn js-close-menu" type="button">
+            <svg width="8" height="8">
+              <use href="./images/icons.svg#icon-close-button"></use>
+            </svg>
+          </button>
+        </div>
       </div>
     </header>
 
@@ -85,12 +154,35 @@
             <li class="project-item">
               <a href="" class="project-list-link link">
                 <div class="overlay-wrapper">
-                  <img
-                    src="./images/banking-app-interface.jpg"
+                  <picture>
+                    <!-- Desktop -->
+                    <source srcset="./images/portfolio/desktop/bank-app/bank-app.webp 1x, ./images/portfolio/desktop/bank-app/bank-app@2x.webp 2x"
+                            media="min-width: 1158px"
+                            type="image/webp"/>
+                    <source srcset="./images/portfolio/desktop/bank-app/bank-app.jpg 1x, ./images/portfolio/desktop/bank-app/bank-app@2x.jpg 2x"
+                            media="min-width: 1158px"/>
+                    
+                    <!-- Tablet -->
+                    <source srcset="./images/portfolio/tablet/bank-app/bank-app.webp 1x, ./images/portfolio/tablet/bank-app/bank-app@2x.webp 2x"
+                            media="min-width: 768px"
+                            type="image/webp" />
+                    <source srcset="./images/portfolio/tablet/bank-app/bank-app.jpg 1x, ./images/portfolio/tablet/bank-app/bank-app@2x.jpg 2x"
+                            media="min-width: 768px" /> 
+                            
+                    <!-- Mobile -->
+                    <source srcset="./images/portfolio/mobile/bank-app/bank-app.webp 1x, ./images/portfolio/mobile/bank-app/bank-app@2x.webp 2x"
+                            media="min-width: 320px"
+                            type="image/webp" />
+                    <source srcset="./images/portfolio/mobile/bank-app/bank-app.jpg 1x, ./images/portfolio/mobile/bank-app/bank-app@2x.jpg 2x"
+                            media="min-width: 320px"/>
+
+
+                    <img
+                    src="./images/portfolio/mobile/bank-app/bank-app.jpg"
                     alt="Banking App Interface"
-                    width="360"
-                    height="300"
-                  />
+                    />
+                  </picture>
+                  
                   <p class="overlay">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
                 </div>
                 <div class="project-list-card-wrapper">
@@ -312,5 +404,7 @@
         </div>
       </div>
     </footer>
+
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
