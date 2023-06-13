@@ -207,9 +207,14 @@ img {
 .mobile-menu-container {
     position: relative;
 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
     height: 100%;
 
     padding-top: 84px;
+    padding-bottom: 40px;
     padding-left: 41px;
 }
 
@@ -233,10 +238,6 @@ img {
 
 /* MOBILE MENU NAVIGATION */
 
-.mobile-menu-nav {
-    margin-bottom: auto;
-    /* margin-bottom: 280px; */
-}
 
 .mobile-menu-nav-item:not(:last-child) {
     margin-bottom: 40px;
